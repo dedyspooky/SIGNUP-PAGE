@@ -29,6 +29,6 @@ const form = document.forms['Sign-Up']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => window.location.href = "https://www.youtube.com")
+    .then(response => window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0")
     .catch(error => console.error('Error!', error.message))
 })
