@@ -1,0 +1,15 @@
+#signup-inputs>form{
+    display: flex;
+    flex-direction: column;
+    width: 12em;
+    background: #121d25;
+    padding: 1rem 1rem;
+    gap: .5rem;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+.error{
+    font-size: 0.6rem;
+    width: 12rem;
+    height: 2rem;
+}

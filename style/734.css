@@ -1,0 +1,13 @@
+.social-signup-btns{
+    border: 1px solid rgb(70, 70, 70);
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #202020;
+    color: var(--text-color);
+    transition: all 0.4s ease;
+    font-size: 0.6rem;
+}
