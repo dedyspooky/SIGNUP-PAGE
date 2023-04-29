@@ -26,7 +26,7 @@ document.querySelector("#input-3").addEventListener("input", function() {
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyvdqVnJfORhzBSyBJwal8MHYmzRD1NvE8dlo6EtJj7xgCYU1bBhXhz2BiIWTxdVNhJ/exec'
 const form = document.forms['Sign-Up']
 
-form.addEventListener('submit', e => {
+form.addEventListener('sign-up', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
