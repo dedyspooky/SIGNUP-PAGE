@@ -50,8 +50,8 @@ form.addEventListener('submit', e => {
 })
 
 //SOCIAL ON CLICK
-function toggleSocial(){
-arrow.addEventListener('click', function(){
+// function toggleSocial(){
+arrow.addEventListener('click', () => {
   if (socialCont.style.left == '-2.5rem') {
     socialCont.style.left = '0rem';
     arrow.style.left = '3rem';
@@ -61,9 +61,9 @@ arrow.addEventListener('click', function(){
     socialCont.style.left = '-2.5rem';
     arrow.style.left = '0.5rem';
     arrowText.style.transform = 'rotate(0deg)';
-  }
-})
-}
+  };
+});
+// };
 
 
 //DARK-Light toggle
@@ -92,7 +92,7 @@ checkbox.addEventListener('change', function() {
 });
 
 // ON LOAD
-window.onload = function() {
+window.onload = () => {
   socialCont.style.left = "-2.5rem";
   showPasswordButton.style.display = 'none';
   arrow.style.left = '0.5rem';
