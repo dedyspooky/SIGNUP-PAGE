@@ -75,13 +75,15 @@ checkbox.addEventListener('change', function() {
           root.style.setProperty('--sign-btn-bg','#DFDFDF');
           root.style.setProperty('--input-bg','rgb(231,231,231)');
           container.style.background = 'url(Media/layered-waves-haikei.svg) no-repeat center center/cover';
-  } else {
-      root.style.setProperty('--text-color','rgb(231, 231, 231)');
-      root.style.setProperty('--blur-color','#2bdddd3e');
-      root.style.setProperty('--form-bg','#000a11');
-      root.style.setProperty('--sign-btn-bg','#202020');
-      root.style.setProperty('--input-bg','#121d25');
-      container.style.background = 'url(Media/dark-bg.svg) no-repeat center center/cover';
+          body.style.background = 'rgb(49,143,143)';
+        } else {
+          root.style.setProperty('--text-color','rgb(231, 231, 231)');
+          root.style.setProperty('--blur-color','#2bdddd3e');
+          root.style.setProperty('--form-bg','#000a11');
+          root.style.setProperty('--sign-btn-bg','#202020');
+          root.style.setProperty('--input-bg','#121d25');
+          container.style.background = 'url(Media/dark-bg.svg) no-repeat center center/cover';
+          body.style.background = 'rgb(26,86,86)';
   }
 });
 
@@ -180,3 +182,11 @@ window.addEventListener("load", function(){
     loader.style.display = "none";
   }, 2000);
 });
+
+
+// bg-toggle according to browser
+if (window.matchMedia("(prefers-color-scheme: dark)")) {
+  document.getElementById("container-positioning").style.background = "url(Media/dark-bg.svg) no-repeat center center/cover";
+} else {
+  document.getElementById("container-positioning").style.background = "url(Media/layered-waves-haikei.svg) no-repeat center center/cover";
+}
