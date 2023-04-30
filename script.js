@@ -1,7 +1,11 @@
 
-// SHOW HIDE PASSWORD
 const passwordInput = document.getElementById('input-3');
 const showPasswordButton = document.getElementById('show-container');
+const socialCont = document.getElementById('social');
+const arrow = document.getElementById('arrow');
+const arrowText = document.getElementById('arrow-text');
+
+// SHOW HIDE PASSWORD
 
 showPasswordButton.addEventListener('click', function() {
   if (passwordInput.type === 'password') {
@@ -22,9 +26,6 @@ function checkInput() {
   }
 }
 
-window.onload = function() {
-  showPasswordButton.style.display = 'none';
-};
 
 // PASSWORD VALIDATOR
 document.querySelector("#input-3").addEventListener("input", function() {
@@ -45,3 +46,28 @@ form.addEventListener('submit', e => {
     .then(response => window.location.href = "Other pages/thankyou.html")
     .catch(error => console.error('Error!', error.message))
 })
+
+//SOCIAL ON CLICK
+function toggleSocial(){
+arrow.addEventListener('click', function(){
+  if (socialCont.style.left == '-2.5rem') {
+    socialCont.style.left = '0rem';
+    arrow.style.left = '3rem';
+    arrowText.style.transform = 'rotate(180deg)';
+  }
+  else{
+    socialCont.style.left = '-2.5rem';
+    arrow.style.left = '0.5rem';
+    arrowText.style.transform = 'rotate(0deg)';
+  }
+})
+}
+
+
+// ON LOAD
+window.onload = function() {
+  socialCont.style.left = "-2.5rem";
+  showPasswordButton.style.display = 'none';
+  arrow.style.left = '0.5rem';
+  arrowText.style.transform = 'rotate(0deg)';
+}

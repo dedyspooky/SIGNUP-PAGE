@@ -17,10 +17,21 @@
     <link rel="stylesheet" media="only screen and (max-width:734px)" href="style/734.css">
     <link rel="stylesheet" media="only screen and (max-width:602px)" href="style/602.css">
     <link rel="stylesheet" media="only screen and (max-width:362px)" href="style/362.css">
-    <title>Sign Up</title>
+    <title>Login</title>
 </head>
 
 <body>
+    <div class="social-container">
+        <div class="social-bg" onclick="toggleSocial()">
+    <div class="social" id="social">
+        <a href="https://www.linkedin.com/in/aviral-ale-027425262/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/dedyspooky" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/aviral.who_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:aviralale@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <button class="arrow-container" id="arrow"><i id="arrow-text" class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
     <div id="container-positioning">
         <div class="container">
             <div id="topbar" class="topbar">
@@ -66,10 +77,10 @@
                     <span class="sign-up-header">Sign-Up</span>
                     <div class="social-signups">
                         <div class="social-signup-btns" id="social-signup-buttons-1">
-                            <i class="fa-brands fa-google"></i><span class="social-btn-text">Sign up with Google</span>
+                            <i class="fa-brands fa-google"></i><span class="social-btn-text">Sign in with Google</span>
                         </div>
                         <div class="social-signup-btns" id="social-signup-buttons-2">
-                            <i class="fa-brands fa-github"></i><span class="social-btn-text">Sign up with Github</span>
+                            <i class="fa-brands fa-github"></i><span class="social-btn-text">Sign in with Github</span>
                         </div>
                     </div>
                     <span class="sign-up-or-header">-OR-</span>
@@ -81,8 +92,8 @@
                                     oninput="checkInput()"><button class="show-container" id="show-container"><i
                                         class="fa-solid fa-eye-slash" id="show"></i></button></div>
                             <span class="error" id="passwordError"></span>
-                            <a><input type="submit" value="Sign Up" name="submit" class="sign-up-button"></a>
-                            <span class="login-opt">Already have an account? <a href="#" class="login-here">login
+                            <a><input type="submit" value="Sign In" name="submit" class="sign-up-button"></a>
+                            <span class="login-opt">New here? <a href="index.html" class="login-here">sign up
                                     here</a></span>
                         </form>
                     </div>

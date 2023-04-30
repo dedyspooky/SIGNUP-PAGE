@@ -14,6 +14,72 @@ body{
     background-color: black;
     font-family: 'Rubik', sans-serif;
 }
+.social-container{
+  display:flex;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  width: 3em;
+}
+
+.social-bg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  z-index: 1;
+  position: absolute;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  width: 3em;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #2bdddd3e;
+  border: 1px solid #21a2a2;
+  border-left: none;
+  transition: all 0.1s ease-out;
+}
+
+.social>a{
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.social a:hover{
+  transform: scale(1.2);
+  color: #21a2a2;
+}
+
+.arrow-container{
+  z-index: 2;
+  position: absolute;
+  padding: 0.6rem;
+  border-radius: 0px 50px 50px 0px;
+  border: none;
+  background-color: #21a2a2;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+.arrow-container:hover{
+  background-color: #25b3b3;
+}
+
+.arrow-container:active{
+  background-color: #32e0e0;
+}
+
+#arrow-text{
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  color: rgb(0,10,17);
+}
 
 #container-positioning{
     width: 100%;

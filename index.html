@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
     <link rel="stylesheet" media="only screen and (max-width:1022px)" href="style/1022.css">
     <link rel="stylesheet" media="only screen and (max-width:1440px)" href="style/1440.css">
     <link rel="stylesheet" media="only screen and (max-width:459px)" href="style/459.css">
@@ -21,6 +21,17 @@
 </head>
 
 <body>
+    <div class="social-container">
+        <div class="social-bg" onclick="toggleSocial()">
+    <div class="social" id="social">
+        <a href="https://www.linkedin.com/in/aviral-ale-027425262/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/dedyspooky" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/aviral.who_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:aviralale@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <button class="arrow-container" id="arrow"><i id="arrow-text" class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
     <div id="container-positioning">
         <div class="container">
             <div id="topbar" class="topbar">
@@ -83,7 +94,7 @@
                                         class="fa-solid fa-eye-slash" id="show"></i></button></div>
                             <span class="error" id="passwordError"></span>
                             <a><input type="submit" value="Sign Up" name="submit" class="sign-up-button"></a>
-                            <span class="login-opt">Already have an account? <a href="#" class="login-here">login
+                            <span class="login-opt">Already have an account? <a href="login.html" class="login-here">signin
                                     here</a></span>
                         </form>
                     </div>
