@@ -12,19 +12,7 @@
     --form-bg: #000a11;
     --sign-btn-bg: #202020;
     --input-bg: #121d25;
-    --bg: url(Media/dark-bg.svg) no-repeat center center/cover;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    --text-color: #000a11;
-    --blur-color: #4effff6e;
-    --form-bg: rgb(216,219,224);
-    --sign-btn-bg: #DFDFDF;
-    --input-bg: rgb(231,231,231);
-    --bg: url(Media/layered-waves-haikei.svg) no-repeat center center/cover;
-}
-  }
-
 body{
     background-color: black;
     font-family: 'Rubik', sans-serif;
@@ -104,7 +92,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg);
+    background: url(..\Media\dark-bg.svg) no-repeat center center/cover;
 }
 
 .container{
