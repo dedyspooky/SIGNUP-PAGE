@@ -4,7 +4,9 @@ const showPasswordButton = document.getElementById('show-container');
 const socialCont = document.getElementById('social');
 const arrow = document.getElementById('arrow');
 const arrowText = document.getElementById('arrow-text');
-
+const root = document.documentElement;
+const checkbox = document.querySelector('.checkbox');
+const container = document.querySelector('#container-positioning');
 // SHOW HIDE PASSWORD
 
 showPasswordButton.addEventListener('click', function() {
@@ -63,6 +65,31 @@ arrow.addEventListener('click', function(){
 })
 }
 
+
+//DARK-Light toggle
+checkbox.addEventListener('change', function() {
+  if (checkbox.checked) {
+    root.style.setProperty('--text-color','#000a11');
+          root.style.setProperty('--blur-color','#4effff6e');
+          root.style.setProperty('--form-bg','rgb(216,219,224)');
+          root.style.setProperty('--sign-btn-bg','#DFDFDF');
+          root.style.setProperty('--input-bg','rgb(231,231,231)');
+  } else {
+      root.style.setProperty('--text-color','rgb(231, 231, 231)');
+      root.style.setProperty('--blur-color','#2bdddd3e');
+      root.style.setProperty('--form-bg','#000a11');
+      root.style.setProperty('--sign-btn-bg','#202020');
+      root.style.setProperty('--input-bg','#121d25');
+  }
+});
+
+checkbox.addEventListener('change', function() {
+  if (checkbox.checked) {
+    container.style.background = 'url(../Media/layered-waves-haikei.svg) no-repeat center center/cover'
+  } else {
+    container.style.background = 'url(../Media/dark-bg.svg) no-repeat center center/cover'
+  }
+});
 
 // ON LOAD
 window.onload = function() {

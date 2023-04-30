@@ -6,7 +6,6 @@
     gap: .5rem;
     border-radius: 20px;
     cursor: pointer;
-    background-color: #202020;
     color: var(--text-color);
     transition: all 0.4s ease;
     font-size: 1rem;
@@ -38,7 +37,7 @@
     height: 2rem;
     padding: .3rem .8rem;
     border-radius: 22px;
-    background-color: #000a11;
+    background-color: var(--form-bg);
     color: var(--text-color);
     cursor: pointer;
     filter: drop-shadow(black 0 0 .2rem);

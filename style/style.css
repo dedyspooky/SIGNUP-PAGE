@@ -5,10 +5,23 @@
 
 :root{
     --text-color: rgb(231, 231, 231);
+    --blur-color: #2bdddd3e;
     --penguin-face: white;
     --penguin-picorna: orange;
     --penguin-skin: rgb(51, 51, 51);
+    --form-bg: #000a11;
+    --sign-btn-bg: #202020;
+    --input-bg: #121d25;
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #000a11;
+    --blur-color: #4effff6e;
+    --form-bg: rgb(216,219,224);
+    --sign-btn-bg: #DFDFDF;
+    --input-bg: rgb(231,231,231);
+}
+  }
 
 body{
     background-color: black;
@@ -20,6 +33,7 @@ body{
   height: 100vh;
   position: absolute;
   width: 3em;
+  z-index: 3;
 }
 
 .social-bg{
@@ -41,7 +55,7 @@ body{
   backdrop-filter: blur(5px);
   width: 3em;
   border-radius: 0px 20px 20px 0px;
-  background-color: #2bdddd3e;
+  background-color: var(--blur-color);
   border: 1px solid #21a2a2;
   border-left: none;
   transition: all 0.1s ease-out;
@@ -79,24 +93,22 @@ body{
 #arrow-text{
   transition: all 0.3s ease;
   font-size: 1.2rem;
-  color: rgb(0,10,17);
+  color: var(--form-bg);
 }
 
 #container-positioning{
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../Media/layered-waves-haikei.svg) no-repeat center center/cover;
-    height: 130vh;
+    background: url(../Media/dark-bg.svg) no-repeat center center/cover;
 }
 
 .container{
-    background-color: #2bdddd3e;
+    background-color: var(--blur-color);
     border-radius: 10px;
     width: 70%;
-    height: 53em;
     filter: drop-shadow(black 0rem 0rem 1rem);
     backdrop-filter: blur(5px);
     border: 1px solid #21a2a2;
@@ -123,7 +135,7 @@ body{
     height: 1.5rem;
     padding: .3rem .8rem;
     border-radius: 22px;
-    background-color: #000a11;
+    background-color: var(--form-bg);
     color: var(--text-color);
     cursor: pointer;
     filter: drop-shadow(black 0 0 .2rem);
@@ -145,7 +157,7 @@ body{
     height: 2.5rem;
     padding: .3rem .8rem;
     border-radius: 22px;
-    background-color: #000a11;
+    background-color: var(--form-bg);
     color: var(--text-color);
     cursor: pointer;
     filter: drop-shadow(black 0 0 .2rem);
@@ -196,7 +208,7 @@ div#left{
 
 
 div#form{
-    background-color: #000a11;
+    background-color: var(--form-bg);
     width: 70%;
     height: 42em;
     display: flex;
@@ -204,7 +216,7 @@ div#form{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    color: rgb(213, 213, 213);
+    color: var(--text-color);
     padding: 1.5rem;
     border-radius: 20px;
     filter: drop-shadow(black 0 0 .1rem);
@@ -229,7 +241,7 @@ div#form{
     gap: .5rem;
     border-radius: 20px;
     cursor: pointer;
-    background-color: #202020;
+    background-color: var(--sign-btn-bg);
     color: var(--text-color);
     transition: all 0.4s ease;
 }
@@ -245,7 +257,7 @@ div#form{
 #signup-inputs>form{
     display: flex;
     flex-direction: column;
-    background: #121d25;
+    background: var(--input-bg);
     padding: 4rem 4rem;
     gap: 1rem;
     backdrop-filter: blur(10px);
@@ -285,7 +297,7 @@ div#form{
     width: 5rem;
     height: 2rem;
     border: 1px solid #21a2a2;
-    background-color: #000a11;
+    background-color: var(--form-bg);
     color: var(--text-color);
     border-radius: 20px;
     cursor: pointer;
@@ -338,6 +350,7 @@ a{
     top: 30em;
     left: 28em;
     filter: drop-shadow(1rem 1rem 1rem black);
+    scale: 0.8;
 }
 .penguin {
     width: 300px;
@@ -555,3 +568,71 @@ a{
     right: 25%;
     transform: rotate(-80deg);
   }
+
+
+/* DARK_LIGHT */
+.toggle-switch {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  --light: rgb(216,219,224);
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+  transform: scale(.5);
+  right: 0rem;
+  position: fixed;
+  z-index: 6;
+}
+
+.switch-label {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 3px solid var(--dark);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+  box-shadow: inset 12px -4px 0px 0px var(--light);
+  background-color: var(--dark);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+  background-color: var(--dark);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
