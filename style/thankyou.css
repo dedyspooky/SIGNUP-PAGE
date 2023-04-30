@@ -286,3 +286,45 @@ body{
     right: 25%;
     transform: rotate(-80deg);
   }
+
+
+  /* RESPONSIVE */
+  @media only screen and (max-width: 1084px) {
+    .thankyou{
+      font-size: 1rem;
+      gap: 1rem;
+    }
+    .penguin-container{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 637px) {
+    .thankyou{
+      font-size: 0.8rem;
+      gap: 0.5rem;
+    }
+    #counter{
+      font-size: 0.4rem;
+    }
+    .penguin-container{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 510px) {
+    .thankyou{
+      font-size: 0.6rem;
+      gap: 0.5rem;
+    }
+    .penguin-container{
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 383px) {
+    .thankyou{
+      font-size: 0.4rem;
+      gap: 0.3rem;
+    }
+    .penguin-container{
+      display: none;
+    }
+  }
