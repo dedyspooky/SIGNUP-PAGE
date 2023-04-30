@@ -75,10 +75,9 @@
                     <span class="sign-up-or-header">-OR-</span>
                     <div id="signup-inputs">
                         <form method="POST" name="Sign-Up">
-                            <input type="text" name="Name" id="input-1" class="inputs" placeholder="Name" required>
                             <input type="email" name="Email" id="input-2" class="inputs" placeholder="Email" required>
                             <div class="password-container"><input type="password" name="Password" id="input-3"
-                                pattern="(?=.*[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?])(?=.*[A-Za-z])(?=.*\d).{8,}" class="inputs" placeholder="Password" required
+                                    pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" class="inputs" placeholder="Password" required
                                     oninput="checkInput()"><button class="show-container" id="show-container"><i
                                         class="fa-solid fa-eye-slash" id="show"></i></button></div>
                             <span class="error" id="passwordError"></span>

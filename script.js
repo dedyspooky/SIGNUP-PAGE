@@ -29,7 +29,7 @@ window.onload = function() {
 // PASSWORD VALIDATOR
 document.querySelector("#input-3").addEventListener("input", function() {
   if (this.validity.patternMismatch) {
-    document.querySelector("#passwordError").textContent = "Password must contain at least one digit and one letter, and be at least 8 characters long.";
+    document.querySelector("#passwordError").textContent = "Password must contain at least one digit, one letter and one symbol, and be at least 8 characters long.";
   } else {
     document.querySelector("#passwordError").textContent = "";
   }
