@@ -42,6 +42,6 @@ const form = document.forms['Sign-Up']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => window.location.href = "../Other pages/thankyou.html")
+    .then(response => window.location.href = "Other pages/thankyou.html")
     .catch(error => console.error('Error!', error.message))
 })
