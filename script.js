@@ -13,6 +13,19 @@ showPasswordButton.addEventListener('click', function() {
   }
 });
 
+function checkInput() {
+  if (passwordInput.value === '') {
+    showPasswordButton.style.display = 'none';
+  }
+  else {
+    showPasswordButton.style.display = 'block';
+  }
+}
+
+window.onload = function() {
+  showPasswordButton.style.display = 'none';
+};
+
 // PASSWORD VALIDATOR
 document.querySelector("#input-3").addEventListener("input", function() {
   if (this.validity.patternMismatch) {

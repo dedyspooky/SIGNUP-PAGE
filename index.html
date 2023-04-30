@@ -75,18 +75,20 @@
                     <span class="sign-up-or-header">-OR-</span>
                     <div id="signup-inputs">
                         <form method="POST" name="Sign-Up">
-                        <input type="text" name="Name" id="input-1" class="inputs" placeholder="Name" required>
-                        <input type="email" name="Email" id="input-2" class="inputs" placeholder="Email" required>
-                        <div class="password-container"><input type="password" name="Password" id="input-3"
-                            pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" class="inputs" placeholder="Password" required><button class="show-container"
-                                id="show-container"><i class="fa-solid fa-eye-slash" id="show"></i></button></div>
-                                <span class="error" id="passwordError"></span>
-                       <a><input type="submit" value="Sign Up" name="submit" class="sign-up-button"></a>
-                        <span class="login-opt">Already have an account? <a href="#" class="login-here">login
-                                here</a></span>
-                    </form>
+                            <input type="text" name="Name" id="input-1" class="inputs" placeholder="Name" required>
+                            <input type="email" name="Email" id="input-2" class="inputs" placeholder="Email" required>
+                            <div class="password-container"><input type="password" name="Password" id="input-3"
+                                    pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" class="inputs" placeholder="Password" required
+                                    oninput="checkInput()"><button class="show-container" id="show-container"><i
+                                        class="fa-solid fa-eye-slash" id="show"></i></button></div>
+                            <span class="error" id="passwordError"></span>
+                            <a><input type="submit" value="Sign Up" name="submit" class="sign-up-button"></a>
+                            <span class="login-opt">Already have an account? <a href="#" class="login-here">login
+                                    here</a></span>
+                        </form>
                     </div>
-                    <span class="tandc">Read our <a href="#">Terms and Conditions</a> & <a href="#">Privacy Policy</a></span>
+                    <span class="tandc">Read our <a href="#">Terms and Conditions</a> & <a href="#">Privacy
+                            Policy</a></span>
                 </div>
             </div>
             <!-- <div class="img-center">
@@ -99,35 +101,35 @@
         <div class="back-mountain"></div>
         <div class="sun"></div>
         <div class="penguin">
-          <div class="penguin-head">
-            <div class="face left"></div>
-            <div class="face right"></div>
-            <div class="chin"></div>
-            <div class="eye left">
-              <div class="eye-lid"></div>
+            <div class="penguin-head">
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="chin"></div>
+                <div class="eye left">
+                    <div class="eye-lid"></div>
+                </div>
+                <div class="eye right">
+                    <div class="eye-lid"></div>
+                </div>
+                <div class="blush left"></div>
+                <div class="blush right"></div>
+                <div class="beak top"></div>
+                <div class="beak bottom"></div>
             </div>
-            <div class="eye right">
-              <div class="eye-lid"></div>
+            <div class="shirt">
+                <div></div>
+                <p></p>
             </div>
-            <div class="blush left"></div>
-            <div class="blush right"></div>
-            <div class="beak top"></div>
-            <div class="beak bottom"></div>
-          </div>
-          <div class="shirt">
-            <div></div>
-            <p></p>
-          </div> 
-          <div class="penguin-body">
-            <div class="arm left"></div>
-            <div class="arm right"></div>
-            <div class="foot left"></div>
-            <div class="foot right"></div>
-          </div>
+            <div class="penguin-body">
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+                <div class="foot left"></div>
+                <div class="foot right"></div>
+            </div>
         </div>
-    
+
         <div class="ground"></div>
-      </div>
+    </div>
     <script src="script.js"></script>
 </body>
 

@@ -242,7 +242,11 @@ div#form{
     width: 17rem;
     height: 2.5rem;
 }
-
+.show-container{
+  position: relative;
+  z-index: 1;
+  left: -1.6em;
+}
 .fa-eye{
     cursor: pointer;
 }
