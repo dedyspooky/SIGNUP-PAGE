@@ -45,12 +45,11 @@
                     <img src="Media\logo.png" alt="logo" class="logo1">
                 </div>
                 <div class="language">
-                    <select id="country" name="country">
-                        <option value="AU">English(UK)</option>
-                        <option value="AU">English(US)</option>
-                        <option value="FR">French</option>
-                        <option value="IN">Hindi</option>
-                        <option value="NP">Nepali</option>
+                    <select id="country" name="country" onchange="changeLanguage()">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="in">हिंदी</option>
+                        <option value="np">नेपाली</option>
                     </select>
                 </div>
             </div>
@@ -62,25 +61,22 @@
                         </h1>
                         <h1 class="tagline3">
                             AIRES</h1>
-                        <p class="desc">Aries is a motivation brand that helps individuals reach their goals. We provide
-                            inspiring content, webinars, interviews and more. Our goal: empower people to become their
-                            best selves.
-                        </p>
-                        <p class="desc">Aries is a motivation brand that helps individuals reach their goals. We provide
-                            inspiring content, webinars, interviews and more. Our goal: empower people to become their
-                            best selves.
-                        </p>
-                        <p class="desc">Aries is a motivation brand that helps individuals reach their goals. We provide
-                            inspiring content, webinars, interviews and more. Our goal: empower people to become their
-                            best selves.
-                        </p>
-                        <p class="desc">Aries is a motivation brand that helps individuals reach their goals. We provide
-                            inspiring content, webinars, interviews and more.
-                        </p>
+                            <p class="desc" id="desc1">Aries is a motivation brand that helps individuals reach their goals. We provide
+                                inspiring content, webinars, interviews and more. Our goal: empower people to become their
+                                best selves.
+                            </p>
+                            <p class="desc" id="desc2">Aries is a motivation brand that helps individuals reach their goals. We provide
+                                inspiring content, webinars, interviews and more. Our goal: empower people to become their
+                                best selves.
+                            </p>
+                            <p class="desc" id="desc3">Aries is a motivation brand that helps individuals reach their goals. We provide
+                                inspiring content, webinars, interviews and more. Our goal: empower people to become their
+                                best selves.
+                            </p>
                     </div>
                 </div>
                 <div id="form">
-                    <span class="sign-up-header">Sign-Up</span>
+                    <span class="sign-up-header">Sign-In</span>
                     <div class="social-signups">
                         <div class="social-signup-btns" id="social-signup-buttons-1">
                             <i class="fa-brands fa-google"></i><span class="social-btn-text">Sign in with Google</span>
@@ -91,7 +87,7 @@
                     </div>
                     <span class="sign-up-or-header">-OR-</span>
                     <div id="signup-inputs">
-                        <form method="POST" name="Sign-Up">
+                        <form method="POST" name="Sign-Up" autocomplete="off">
                             <input type="email" name="Email" id="input-2" class="inputs" placeholder="Email" required>
                             <div class="password-container"><input type="password" name="Password" id="input-3"
                                     pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" class="inputs" placeholder="Password" required
