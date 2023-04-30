@@ -85,9 +85,9 @@ checkbox.addEventListener('change', function() {
 
 checkbox.addEventListener('change', function() {
   if (checkbox.checked) {
-    container.style.background = 'url(../Media/layered-waves-haikei.svg) no-repeat center center/cover'
+    container.style.background = 'url(Media/layered-waves-haikei.svg) no-repeat center center/cover'
   } else {
-    container.style.background = 'url(../Media/dark-bg.svg) no-repeat center center/cover'
+    container.style.background = 'url(Media/dark-bg.svg) no-repeat center center/cover'
   }
 });
 
@@ -177,3 +177,9 @@ function changeLanguage() {
   document.querySelector('.accswi').textContent = language.content.accswitch;
   document.querySelector('.readour').textContent = language.content.readour;
 }
+
+// LOADER
+window.addEventListener("load", function(){
+  const loader = document.querySelector("#loader-wrapper");
+  loader.style.display = "none";
+});

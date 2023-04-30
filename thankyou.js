@@ -10,3 +10,7 @@ const counter = setInterval(() => {
   }
 }, 1000);
 
+window.addEventListener("load", function(){
+  const loader = document.querySelector("#loader-wrapper");
+  loader.style.display = "none";
+});
