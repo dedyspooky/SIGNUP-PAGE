@@ -185,8 +185,10 @@ window.addEventListener("load", function(){
 
 
 // bg-toggle according to browser
+function toggleDark(){
 if (window.matchMedia("(prefers-color-scheme: dark)")) {
-  document.getElementById("container-positioning").style.background = "url(Media/dark-bg.svg) no-repeat center center/cover";
+  container.style.background = "url(Media/dark-bg.svg) no-repeat center center/cover";
 } else {
-  document.getElementById("container-positioning").style.background = "url(Media/layered-waves-haikei.svg) no-repeat center center/cover";
+  container.style.background = "url(Media/layered-waves-haikei.svg) no-repeat center center/cover";
 }
+};

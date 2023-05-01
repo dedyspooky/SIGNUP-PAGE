@@ -22,29 +22,44 @@
 
 <body>
     <div id="loader-wrapper">
-    <div class="loader">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-      </div>
-      </div>
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
     <div class="toggle-switch">
         <label class="switch-label" for="toggleSwitch">
-          <input type="checkbox" class="checkbox" id="toggleSwitch">
-          <span class="slider"></span>
+            <input type="checkbox" class="checkbox" id="toggleSwitch">
+            <span class="slider"></span>
         </label>
-      </div>  
+    </div>
     <div class="social-container">
         <div class="social-bg" onclick="toggleSocial()">
-    <div class="social" id="social">
-        <a href="https://www.linkedin.com/in/aviral-ale-027425262/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/dedyspooky" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/aviral.who_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="mailto:aviralale@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <div class="social" id="social">
+                <a href="https://www.linkedin.com/in/aviral-ale-027425262/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/dedyspooky" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/aviral.who_/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:aviralale@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <button class="arrow-container" id="arrow"><i id="arrow-text" class="fa-solid fa-arrow-right"></i></button>
+        </div>
     </div>
-    <button class="arrow-container" id="arrow"><i id="arrow-text" class="fa-solid fa-arrow-right"></i></button>
-</div>
-</div>
     <div id="container-positioning">
         <div class="container">
             <div id="topbar" class="topbar">
@@ -68,15 +83,18 @@
                         </h1>
                         <h1 class="tagline3">
                             AIRES</h1>
-                        <p class="desc" id="desc1">Aries is a motivation brand that helps individuals reach their goals. We provide
+                        <p class="desc" id="desc1">Aries is a motivation brand that helps individuals reach their goals.
+                            We provide
                             inspiring content, webinars, interviews and more. Our goal: empower people to become their
                             best selves.
                         </p>
-                        <p class="desc" id="desc2">Aries is a motivation brand that helps individuals reach their goals. We provide
+                        <p class="desc" id="desc2">Aries is a motivation brand that helps individuals reach their goals.
+                            We provide
                             inspiring content, webinars, interviews and more. Our goal: empower people to become their
                             best selves.
                         </p>
-                        <p class="desc" id="desc3">Aries is a motivation brand that helps individuals reach their goals. We provide
+                        <p class="desc" id="desc3">Aries is a motivation brand that helps individuals reach their goals.
+                            We provide
                             inspiring content, webinars, interviews and more. Our goal: empower people to become their
                             best selves.
                         </p>
@@ -86,10 +104,12 @@
                     <span class="sign-up-header">Sign-Up</span>
                     <div class="social-signups">
                         <div class="social-signup-btns" id="social-signup-buttons-1">
-                            <i class="fa-brands fa-google"></i><span class="social-btn-text" id="social-btn-text1">Sign up with Google</span>
+                            <i class="fa-brands fa-google"></i><span class="social-btn-text" id="social-btn-text1">Sign
+                                up with Google</span>
                         </div>
                         <div class="social-signup-btns" id="social-signup-buttons-2">
-                            <i class="fa-brands fa-github"></i><span class="social-btn-text" id="social-btn-text2">Sign up with Github</span>
+                            <i class="fa-brands fa-github"></i><span class="social-btn-text" id="social-btn-text2">Sign
+                                up with Github</span>
                         </div>
                     </div>
                     <span class="sign-up-or-header">-OR-</span>
@@ -98,18 +118,21 @@
                             <input type="text" name="Name" id="input-1" class="inputs" placeholder="Name" required>
                             <input type="email" name="Email" id="input-2" class="inputs" placeholder="Email" required>
                             <div class="password-container"><input type="password" name="Password" id="input-3"
-                                pattern="(?=.*[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?])(?=.*[A-Za-z])(?=.*\d).{8,}" class="inputs" placeholder="Password" required
-                                    oninput="checkInput()"><button class="show-container" id="show-container"><i
-                                        class="fa-solid fa-eye-slash" id="show"></i></button></div>
+                                    pattern="(?=.*[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?])(?=.*[A-Za-z])(?=.*\d).{8,}"
+                                    class="inputs" placeholder="Password" required oninput="checkInput()"><button
+                                    class="show-container" id="show-container"><i class="fa-solid fa-eye-slash"
+                                        id="show"></i></button></div>
                             <span class="error" id="passwordError"></span>
                             <a><input type="submit" value="Sign Up" name="submit" class="sign-up-button"></a>
                             <div class="login-opt">
-                            <span class="accswi">Already have an account? </span><a href="login.html" class="login-here">signin
-                                here</a>
+                                <span class="accswi">Already have an account? </span><a href="login.html"
+                                    class="login-here">signin
+                                    here</a>
                             </div>
                         </form>
                     </div>
-                    <div class="tandc"><span class="readour">Read our </span><a href="#">Terms and Conditions</a> & <a href="#">Privacy
+                    <div class="tandc"><span class="readour">Read our </span><a href="#">Terms and Conditions</a> & <a
+                            href="#">Privacy
                             Policy</a></div>
                 </div>
             </div>
