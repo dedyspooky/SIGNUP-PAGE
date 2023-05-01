@@ -30,10 +30,10 @@
     <div class="social-container">
         <div class="social-bg" onclick="toggleSocial()">
     <div class="social" id="social">
-        <a href="https://www.linkedin.com/in/aviral-ale-027425262/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/dedyspooky" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/aviral.who_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="mailto:aviralale@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/aviral-ale-027425262/" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/dedyspooky" target="_blank" title="github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/aviral.who_/" target="_blank" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:aviralale@gmail.com" target="_blank" title="email"><i class="fa-solid fa-envelope"></i></a>
     </div>
     <button class="arrow-container" id="arrow"><i id="arrow-text" class="fa-solid fa-arrow-right"></i></button>
 </div>
@@ -87,10 +87,10 @@
                     </div>
                     <span class="sign-up-or-header">-OR-</span>
                     <div id="signup-inputs">
-                        <form method="POST" name="Sign-Up" autocomplete="off" autocomplete="off">
+                        <form method="POST" name="Sign-Up" autocomplete="off">
                             <input type="email" name="Email" id="input-2" class="inputs" placeholder="Email" required>
                             <div class="password-container"><input type="password" name="Password" id="input-3"
-                                    pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" class="inputs" placeholder="Password" required
+                                pattern="(?=.*[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?])(?=.*[A-Za-z])(?=.*\d).{8,}" class="inputs" placeholder="Password" required
                                     oninput="checkInput()"><button class="show-container" id="show-container"><i
                                         class="fa-solid fa-eye-slash" id="show"></i></button></div>
                             <span class="error" id="passwordError"></span>
